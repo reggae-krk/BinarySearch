@@ -1,6 +1,7 @@
 public class BinarySearch {
 
-    public boolean search(int[] array, int toSearch) {
+    public static boolean search(int[] array, int toSearch) {
+        if(array == null || array.length == 0) throw new IllegalArgumentException();
         int guess = 0;
         int mid = 0;
         int low = 0;
